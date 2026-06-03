@@ -46,7 +46,7 @@ def search(query: str, limit: int = 24) -> list[dict]:
 
 
 def get_stats() -> dict:
-    return {
+    return {  
         "total": len(RECIPES),
         "avg_ingredients": round(
             sum(r["num_ingredients"] for r in RECIPES) / len(RECIPES), 1
